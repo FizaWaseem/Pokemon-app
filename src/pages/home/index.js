@@ -122,7 +122,7 @@ else {
   }
  useEffect(() => {
     lottie.loadAnimation({
-      container: document.querySelector("#react-logo"),
+      container: document.querySelector("#react-pokemnon"),
       animationData: pokemon
     });
     lottie.loadAnimation({
@@ -149,7 +149,7 @@ else {
             alignItems="center"
           >
             {" "}
-           <Box id="react-logo"  style={{ width: 380, height: 380, }} />
+           <Box id="react-pokemnon"  style={{ width: 380, height: 380, }} />
            <Box id="pikachu" style={{ width: 380, height: 380, }} />
           
           </Stack>
