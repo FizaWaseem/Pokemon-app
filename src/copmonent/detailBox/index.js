@@ -18,23 +18,23 @@ const DetailBox = ({
   Name,
 }) => {
   return (
-    <Box maxW="lg" borderWidth="none" borderRadius="lg" overflow="hidden" bg="#ebc855">
+    <Box maxW={{ base: "xs", md: "lg", lg: "lg" }} borderWidth="none" borderRadius="lg" overflow="hidden" bg="#ebc855">
       <Stack direction="row">
         <Image
-          boxSize="150px"
+          boxSize={{ base: "102px", md: "150px", lg: "150px" }}
           objectFit="cover"
           bg="red.600"
           src={src}
           alt="Segun Adebayo"
         />
         <Image
-          boxSize="150px"
+          boxSize={{ base: "102px", md: "150px", lg: "150px" }}
           objectFit="cover"
           bg="blue.600"
           src={src2}
           alt="Dan Abramov"
         />
-        <Image boxSize="150px" bg="pink.600" src={src3} alt="Dan Abramov" />
+        <Image boxSize={{ base: "102px", md: "150px", lg: "150px" }} bg="pink.600" src={src3} alt="Dan Abramov" />
       </Stack>
       <Box p="4">
         <Box d="flex" alignItems="baseline"></Box>
@@ -47,8 +47,8 @@ const DetailBox = ({
           isTruncated
         >
           <Stack direction="row">
-            <Text fontSize="4xl"> Name:</Text>{" "}
-            <Text pt={2} fontSize="3xl" isTruncated>
+            <Text fontSize={{ base: "18px", md: "4xl", lg: "4xl" }}> Name:</Text>{" "}
+            <Text pt={{ base: 0, md: 2, lg: 2 }} fontSize={{ base: "18px", md: "3xl", lg: "3xl" }} isTruncated>
               {Name.charAt(0).toUpperCase() + Name.slice(1)}
             </Text>
           </Stack>
@@ -58,12 +58,12 @@ const DetailBox = ({
           justifyContent="space-around"
           alignItems="center"
         >
-          <Text fontSize="4xl"> Type : </Text>{" "}
-          <Text pt={2} fontSize="3xl" color="gray" isTruncated>
+          <Text fontSize={{ base: "18px", md: "4xl", lg: "4xl" }}> Type : </Text>{" "}
+          <Text pt={2} fontSize={{ base: "18px", md: "3xl", lg: "3xl" }} color="gray" isTruncated>
             {Type.charAt(0).toUpperCase() + Type.slice(1)}
           </Text>
-          <Text fontSize="4xl"> Moves : </Text>{" "}
-          <Text pt={2} fontSize="3xl" color="gray" isTruncated>
+          <Text fontSize={{ base: "18px", md: "4xl", lg: "4xl" }}> Moves : </Text>{" "}
+          <Text pt={2} fontSize={{ base: "18px", md: "3xl", lg: "3xl" }} color="gray" isTruncated>
             {Move}
           </Text>
         </Stack>
@@ -73,12 +73,12 @@ const DetailBox = ({
             justifyContent="space-around"
             alignItems="center"
           >
-            <Text fontSize="4xl"> Attacks: </Text>{" "}
-            <Text pt={2} fontSize="3xl" color="gray" isTruncated>
+            <Text fontSize={{ base: "18px", md: "4xl", lg: "4xl" }}> Attacks: </Text>{" "}
+            <Text pt={2} fontSize={{ base: "18px", md: "3xl", lg: "3xl" }} color="gray" isTruncated>
               {Attack}
             </Text>
-            <Text fontSize="4xl">Defence :</Text>{" "}
-            <Text pt={2} fontSize="3xl" color="gray" isTruncated>
+            <Text fontSize={{ base: "18px", md: "4xl", lg: "4xl" }}>Defence :</Text>{" "}
+            <Text pt={2} fontSize={{ base: "18px", md: "3xl", lg: "3xl" }} color="gray" isTruncated>
               {Defense}
             </Text>
           </Stack>
@@ -89,12 +89,12 @@ const DetailBox = ({
             justifyContent="space-around"
             alignItems="center"
           >
-            <Text fontSize="4xl"> Height : </Text>{" "}
-            <Text pt={2} fontSize="3xl" color="gray" isTruncated>
+            <Text fontSize={{ base: "18px", md: "4xl", lg: "4xl" }}> Height : </Text>{" "}
+            <Text pt={2} fontSize={{ base: "18px", md: "3xl", lg: "3xl" }} color="gray" isTruncated>
               {Height}
             </Text>
-            <Text fontSize="4xl"> Weight : </Text>{" "}
-            <Text pt={2} fontSize="3xl" color="gray" isTruncated>
+            <Text fontSize={{ base: "18px", md: "4xl", lg: "4xl" }}> Weight : </Text>{" "}
+            <Text pt={2} fontSize={{ base: "18px", md: "3xl", lg: "3xl" }} color="gray" isTruncated>
               {Weight}
             </Text>
           </Stack>
